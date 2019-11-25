@@ -1,0 +1,32 @@
+package passwordprotection;
+
+
+public class Passdatabase {
+
+	public Management getManagement(int accessCode) {
+
+	   
+		if(accessCode == 2453) {
+        return new Management("Hi Mr. Wilson, your Passwords are: \n Google Adsense: Rookie23Wire1! \n YouTube: RyanHeckler21@ \n Gmail: CookiesGummy76# \n Facebook: MyMomdo3sLov3M3");
+//Else if Statements for each value; 
+        //add line breaks for each piece of information to separate
+    
+	} else if (accessCode == 7865) {
+        return new Management("Hi Mrs. Framer, your passwords are: \n Gmail: Pencil4Pusher3@ \n Facebook: accesscodeaguar23Walrus3! \n YouTube: GeminiGem21$");
+    
+    } else if (accessCode == 9680) {
+        return new Management("Hi Mr. Blake, your passwords are: \n Gmail: Pineapple3Water8* \n AOL: RightForwardMarker20^ \n Facebook: GravyTrain45%");
+    
+    } else if (accessCode == 1529) {
+        return new Management("Hi Mrs. White, your passwords are: \n Yahoo: GhiGhitr1@ \n UllieEwer5$ \n ClubPenguin: azareeza2# \n Gmail: frummerframe26$"); 
+    
+    } else if (accessCode == 4872) {
+        return new Management("Hi Mr. Bush, your passwords are: \n Gmail: President43%%$ \n Facebook: HSEC2002March \n AOL: Bush4Prez2020");
+//The else statement is for any other responses 
+
+    } else {
+        return null;
+    }
+    }
+
+}
