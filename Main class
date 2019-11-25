@@ -1,0 +1,64 @@
+package passwordprotection;
+
+import java.util.Scanner;
+
+public class Management {
+public static void main(String[] args) {
+number = new Scanner(System.in);
+System.out.println("Welcome to your finance manager");
+    String passwords;
+//Utilize a string for the Management database
+    int passrandom; {
+// Do while loop will output Management data and execute responses
+    
+    do
+    {
+    System.out.print("Enter a Management Number:");
+//Set objects and use other class for strings and variables
+    passrandom=number.nextInt();
+    Passdatabase Managements = new Passdatabase();
+    Management fourcodes;
+
+//used 'fourcodes' to signify the list of Managements is retrieved from DB
+    fourcodes= Managements.getManagement(passrandom);
+
+       if(fourcodes != null)
+//null signifies the inequality of the responses
+       {
+
+    System.out.println(fourcodes.getPassword());
+     }
+       else
+
+     System.out.println("There is no Management number " + passrandom + " in our records.");
+     System.out.print("Display another Management? (y/n): ");
+     passwords = number.next();
+//gives value of next to scanner and string
+     
+    }while(passwords.equals("y"));
+//while loop is used here for continuation or termination
+   
+    }
+}
+
+  
+//Set strings for all five instances and variables
+public int numberManagement;
+//private because of personal data
+private String Password;
+private static Scanner number;
+
+
+//'this.' sets a variable equal to what it reads so the String can accept it
+//avoids conflict of naming methods and constructors
+public Management(String Password) {
+ 
+   this.Password = Password;
+}
+
+public String getPassword() {
+   return Password;
+}
+
+
+	}
