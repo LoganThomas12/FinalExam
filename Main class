@@ -13,7 +13,7 @@ System.out.println("Welcome to your finance manager");
     
     do
     {
-    System.out.print("Enter a Management Number:");
+    System.out.print("Enter a number 1-5 for financial tips");
 //Set objects and use other class for strings and variables
     passrandom=number.nextInt();
     Passdatabase Managements = new Passdatabase();
@@ -30,8 +30,8 @@ System.out.println("Welcome to your finance manager");
      }
        else
 
-     System.out.println("There is no Management number " + passrandom + " in our records.");
-     System.out.print("Display another Management? (y/n): ");
+     System.out.println("This is an invalid option.");
+     System.out.print("Display another tip? (y/n): ");
      passwords = number.next();
 //gives value of next to scanner and string
      
