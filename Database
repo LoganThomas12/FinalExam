@@ -4,7 +4,7 @@ package passwordprotection;
 public class Passdatabase {
 
 	public Management getManagement(int finance) {
-
+//Link class to main class 'Management' to input what tips the user wants to see.
 	   
 		if(finance == 1) {
         return new Management("Check your bank's interest rate for credit. "
