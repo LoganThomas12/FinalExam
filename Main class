@@ -39,7 +39,7 @@ public static void main(String[] args) {
 System.out.println("Welcome to your personalized Finance Helper");
 System.out.println("The first steps in your financial success depend on where YOUR money is going.");
 System.out.println("If you have any monthly subscriptions answer the next question"
-		+ "\nIf not, ENTER 0 for all blocks. ");
+		+ "\nIf not, ENTER 0 for all Subscription blocks. ");
 //Utilize an array to input value; String the variables user wishes to enter
 double[] amounts = new double[2];
 double[] weekincome = new double[2];
@@ -56,13 +56,13 @@ for (int j = 0; j < amounts.length - 1; j++)
 	amounts[j]=balance.nextDouble();
 	System.out.println("Weekly paycheck: ");
 	weekincome[j] = balance.nextDouble();
-	System.out.println("Subscription 1 name and monthly cost: ");
+	System.out.println("Subscription 1 cost: ");
 	sub1[j] = balance.next();
-	System.out.println("Subscription 2 name and monthly cost: ");
+	System.out.println("Subscription 2 cost: ");
 	sub2[j] = balance.next();
-	System.out.println("Subscription 3 name and monthly cost: ");
+	System.out.println("Subscription 3 cost: ");
 	sub3[j] = balance.next();
-	System.out.println("Subscription 4 name and monthly cost: ");
+	System.out.println("Subscription 4 cost: ");
 	sub4[j] = balance.next();
 
 }
@@ -92,11 +92,14 @@ System.out.println("What is the dividend for each share: ");
 	double yieldratio = dividend / shareprice * DYR;
 System.out.println("The Dividend Yield Ratio is: " + Math.floor(yieldratio) + "%");
 //Run calculations of yield ratio
-if (yieldratio > 15.00 ) {
-System.out.println("Your investment seems to be in good hands");;
-	} else { 
-System.out.println("Reconsider your investment if the company isn't well-established");
+if (yieldratio >= 25.00 && yieldratio <= 20.00 ) {
+System.out.println("Your investment seems to be in good hands. The Company is probably well-established.");
+	} else if (yieldratio >= 19.00 && yieldratio <= 14.00) { 
+System.out.println("The company must be gaining some traction with a rate such as that; it is a fair investment.");
 	}
+		else { 
+System.out.println("The company might not be as established, reconsider your share in that company at the moment.");			
+		}
 number = new Scanner(System.in);
 //String variable passwords for Do-While Loop
    String passwords;
